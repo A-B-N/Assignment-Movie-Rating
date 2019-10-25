@@ -55,7 +55,7 @@ module.exports.post_addmovie = function(req, res)
     // Submit to the database.
     collection.insert( { "moviename" : movieName,
                          "moviegenre" : movieGenre,
-                        "movierating" = movieRating },
+                        "movierating" : movieRating },
                        function (err, doc) 
                        {
                            if (err) {
